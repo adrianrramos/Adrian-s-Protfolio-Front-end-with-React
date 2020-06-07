@@ -8,8 +8,39 @@
   text-align: center;
   font-size: 2em;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   color: rgb(101, 123, 131);
   border: 7px solid rgba(248, 223, 160, 0.733);
   border-radius: 10px;
+}
+
+.prjc-display {
+  margin: 5vw 0;
+  display: grid;
+  grid-template-columns: 15.3vw 15.3vw 15.3vw;
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+
+.prjc-item {
+  height: 10vw;
+  text-align: center;
+}
+
+.prjc-img {
+  height: 8vw;
+  margin-bottom: 1vw;
+  border-radius: 5px;
+  background-color: rgb(238, 232, 213);
+}
+
+.prjc-img:hover {
+  box-shadow: 10px 10px rgba(248, 223, 160, 0.733);
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.prjc-title {
+  font-size: 1em;
+  font-weight: 600;
 }

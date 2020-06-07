@@ -1,0 +1,69 @@
+.abt-containers {
+  width: 48vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3vw;
+  color: rgb(101, 123, 131);
+}
+
+.abt-panel1 {
+  height: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid rgba(248, 223, 160, 0.733);
+  border-radius: 10px;
+}
+
+.abt-link {
+  color: inherit;
+}
+
+.abt-panel1 > p {
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.abt-panel2 {
+  font-size: 1.1em;
+  letter-spacing: 0.04em;
+}
+
+#abt-bodyText {
+  margin-top: 0;
+}
+
+.abt-panel2 > strong {
+  font-style: italic;
+}
+
+.tools-header {
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: -5px;
+}
+
+.abt-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.tool-item {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.tool-icon {
+  margin-right: 10px;
+  color: inherit;
+}
+
+.svg {
+  fill: rgb(101, 123, 131);
+  width: 30px;
+  height: 30px;
+}

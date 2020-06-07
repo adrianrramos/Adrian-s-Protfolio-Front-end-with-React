@@ -3,9 +3,9 @@ import "../styles/Projects.css";
 
 const ProjectMarkup = ({ project: { image, title } }) => {
   return (
-    <div>
-      <div>{image}</div>
-      <div>{title}</div>
+    <div className="prjc-item">
+      <div className="prjc-img">{image}</div>
+      <div className="prjc-title">{title}</div>
     </div>
   );
 };
