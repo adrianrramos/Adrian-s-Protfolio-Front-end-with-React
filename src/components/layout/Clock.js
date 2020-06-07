@@ -15,7 +15,7 @@ const Clock = () => {
   }, []);
   return (
     <Fragment>
-      <h1>{time}</h1>
+      <p>{time}</p>
     </Fragment>
   );
 };

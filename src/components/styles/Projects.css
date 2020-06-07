@@ -1,0 +1,15 @@
+.prjc-container {
+  width: 48vw;
+  margin: 0 auto;
+}
+
+.prjc-header {
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: rgb(101, 123, 131);
+  border: 7px solid rgba(248, 223, 160, 0.733);
+  border-radius: 10px;
+}

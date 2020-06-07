@@ -1,0 +1,21 @@
+.gb-container {
+  height: 5vw;
+}
+
+.gb-box {
+  width: 25%;
+  height: 100%;
+  margin: 0 2.5vw;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.gb-link {
+  text-decoration: none;
+  color: rgb(101, 123, 131);
+}
+
+.gb-arrow {
+  margin-right: 10px;
+}
