@@ -9,8 +9,6 @@
   font-size: 2em;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: rgb(101, 123, 131);
-  border: 7px solid rgba(248, 223, 160, 0.733);
   border-radius: 10px;
 }
 
@@ -31,11 +29,9 @@
   height: 8vw;
   margin-bottom: 1vw;
   border-radius: 5px;
-  background-color: rgb(238, 232, 213);
 }
 
 .prjc-img:hover {
-  box-shadow: 10px 10px rgba(248, 223, 160, 0.733);
   cursor: pointer;
   margin-top: -10px;
 }

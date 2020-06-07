@@ -1,0 +1,21 @@
+.cnt-container {
+  width: 48vw;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.cnt-title {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.cnt-line {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.cnt-line > a {
+  color: inherit;
+}

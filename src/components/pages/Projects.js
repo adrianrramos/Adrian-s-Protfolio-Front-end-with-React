@@ -1,7 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import ProjectMarkup from "../layout/ProjectMarkup";
 import GoBack from "../layout/GoBack";
-import "../styles/Projects.css";
+
+import "../../styles/Projects.css";
+import "../../styles/DarkMode.css";
+
+import DarkModeContext from "../../contexts/DarkModeContext";
 
 const dumbyProjectData = [
   { image: "PROJECT IMAGE", title: "FIREBASE & REACT: twitter clone", id: 1 },
@@ -17,11 +21,15 @@ const prjcMarkup = dumbyProjectData.map(project => (
 ));
 
 const Projects = () => {
+  const darkmode = useContext(DarkModeContext);
+  const clr = darkmode.darkmode ? "lt-clr" : "drk-clr";
+  const border = darkmode.darkmode ? "lt-border" : "drk-border";
+
   return (
     <Fragment>
       <GoBack />
       <div className="prjc-container">
-        <div className="prjc-header">
+        <div className={`prjc-header ${clr} ${border}`}>
           <p>PROJECTS</p>
         </div>
         <div className="prjc-display">{prjcMarkup}</div>

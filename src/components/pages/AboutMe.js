@@ -1,14 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import GoBack from "../layout/GoBack";
-import "../styles/AboutMe.css";
 import { Link } from "react-router-dom";
 
+import "../../styles/AboutMe.css";
+import "../../styles/DarkMode.css";
+
+import DarkModeContext from "../../contexts/DarkModeContext";
+
 const AboutMe = () => {
+  const darkmode = useContext(DarkModeContext);
+  const clr = darkmode.darkmode ? "lt-clr" : "drk-clr";
+  const border = darkmode.darkmode ? "lt-border" : "drk-border";
+  const fill = darkmode.darkmode ? "lt-fill" : "drk-fill";
+
   return (
     <Fragment>
       <GoBack />
-      <div className="abt-containers">
-        <div className="abt-panel1">
+      <div className={`abt-containers ${clr}`}>
+        <div className={`abt-panel1 ${border}`}>
           <p>FRONT-END DEVELOPER</p>
         </div>
         <div className="abt-panel2">
@@ -44,8 +53,7 @@ const AboutMe = () => {
                 width="48"
                 height="48"
                 viewBox="0 0 172 172"
-                style={{ fill: "#000000" }}
-                className="tool-icon svg"
+                className={`tool-icon svg ${fill}`}
               >
                 <g
                   fill="none"
@@ -88,7 +96,7 @@ const AboutMe = () => {
                 height="48"
                 viewBox="0 0 172 172"
                 style={{ fill: "#000000" }}
-                className="tool-icon svg"
+                className={`tool-icon svg ${fill}`}
               >
                 <g
                   fill="none"
@@ -126,7 +134,7 @@ const AboutMe = () => {
                 height="48"
                 viewBox="0 0 172 172"
                 style={{ fill: "#000000" }}
-                className="tool-icon svg"
+                className={`tool-icon svg ${fill}`}
               >
                 <g
                   fill="none"
@@ -174,7 +182,7 @@ const AboutMe = () => {
             <p className="tool-item">
               <img
                 src="https://img.icons8.com/wired/64/000000/webpack.png"
-                className="tool-icon svg"
+                className={`tool-icon svg ${fill}`}
                 alt="webpack icon"
               />{" "}
               Webpack

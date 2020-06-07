@@ -1,0 +1,41 @@
+.lt-bkg {
+  background-color: rgb(253, 246, 227) !important;
+}
+
+.lt-clr {
+  color: rgb(101, 123, 131);
+}
+
+.lt-fill {
+  fill: rgb(101, 123, 131);
+}
+
+.lt-border {
+  border: 7px solid rgba(248, 223, 160, 0.733);
+}
+
+.lt-hover:hover {
+  background-color: rgb(238, 232, 213);
+  box-shadow: 10px 10px rgba(248, 223, 160, 0.733);
+}
+
+.drk-bkg {
+  background-color: rgb(7, 54, 66);
+}
+
+.drk-clr {
+  color: rgb(147, 161, 161);
+}
+
+.drk-fill {
+  fill: rgb(147, 161, 161);
+}
+
+.drk-border {
+  border: 7px solid #6aabbb85;
+}
+
+.drk-hover:hover {
+  background-color: rgb(0, 43, 54);
+  box-shadow: 10px 10px #6aabbb85;
+}

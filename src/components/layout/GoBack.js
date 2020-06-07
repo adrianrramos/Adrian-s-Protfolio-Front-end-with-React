@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/GoBack.css";
+import "../../styles/GoBack.css";
 import { Link } from "react-router-dom";
 
 const GoBack = () => {
