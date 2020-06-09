@@ -1,13 +1,12 @@
 import React, { useContext, Fragment } from "react";
-import ReactDOM from "react-dom";
 
-import "../../styles/ProjectModal.css";
+import "../../styles/ModalMarkup.css";
 import "../../styles/DarkMode.css";
 
 import DarkModeContext from "../../contexts/DarkModeContext";
 import GoBack from "./GoBack";
 
-const ProjectModal = ({
+const ModalMarkup = ({
   project: { title, description, demo, sourceCode, previewGifs },
 }) => {
   const darkmode = useContext(DarkModeContext);
@@ -15,7 +14,37 @@ const ProjectModal = ({
   const clr = darkmode.darkmode ? "lt-clr" : "drk-clr";
   const shadow = darkmode.darkmode ? "lt-shadow" : "drk-shadow";
 
-  return ReactDOM.createPortal(
+  const sourceCodeLinks = sourceCode.backend ? (
+    <Fragment>
+      <a
+        className={`link-btn ${shadow}`}
+        href={sourceCode.frontend}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Frontend Code
+      </a>
+      <a
+        className={`link-btn ${shadow}`}
+        href={sourceCode.backend}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Backend Code
+      </a>
+    </Fragment>
+  ) : (
+    <a
+      className={`link-btn ${shadow}`}
+      href={sourceCode.frontend}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Source Code
+    </a>
+  );
+
+  return (
     <Fragment>
       <GoBack />
       <div className="modal-bkg">
@@ -30,50 +59,23 @@ const ProjectModal = ({
             </div>
             <div className="modal-body">
               <p className="modal-desc">{description}</p>
-              {sourceCode.backend ? (
-                <Fragment>
-                  <a
-                    className={`link-btn ${shadow}`}
-                    href={sourceCode.frontend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Frontend Code
-                  </a>
-                  <a
-                    className={`link-btn ${shadow}`}
-                    href={sourceCode.backend}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Backend Code
-                  </a>
-                </Fragment>
-              ) : (
+              {sourceCodeLinks}
+              {demo && (
                 <a
                   className={`link-btn ${shadow}`}
-                  href={sourceCode.frontend}
+                  href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Source Code
+                  Demo
                 </a>
               )}
-              <a
-                className={`link-btn ${shadow}`}
-                href={demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </Fragment>,
-    document.getElementById("modal")
+    </Fragment>
   );
 };
 
-export default ProjectModal;
+export default ModalMarkup;
