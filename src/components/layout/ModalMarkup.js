@@ -1,75 +1,67 @@
 import React, { useContext, Fragment } from "react";
+import ButtonLink from "./ButtonLink";
+import Carousel from "./Carousel";
 
 import "../../styles/ModalMarkup.css";
 import "../../styles/DarkMode.css";
 
 import DarkModeContext from "../../contexts/DarkModeContext";
-import GoBack from "./GoBack";
 
 const ModalMarkup = ({
   project: { title, description, demo, sourceCode, previewGifs },
+  closeModal,
 }) => {
   const darkmode = useContext(DarkModeContext);
-  const staticBkg = darkmode.darkmode ? "lt-stbkg" : "drk-stbkg";
+  const bkg = darkmode.darkmode ? "lt-bkg" : "drk-bkg";
   const clr = darkmode.darkmode ? "lt-clr" : "drk-clr";
-  const shadow = darkmode.darkmode ? "lt-shadow" : "drk-shadow";
+  const btnHover = darkmode.darkmode ? "lt-btnHover" : "drk-btnHover";
 
   const sourceCodeLinks = sourceCode.backend ? (
     <Fragment>
-      <a
-        className={`link-btn ${shadow}`}
-        href={sourceCode.frontend}
-        target="_blank"
-        rel="noopener noreferrer"
+      <ButtonLink
+        styles={`link-btn ${clr} ${btnHover}`}
+        linkTo={sourceCode.frontend}
       >
         Frontend Code
-      </a>
-      <a
-        className={`link-btn ${shadow}`}
-        href={sourceCode.backend}
-        target="_blank"
-        rel="noopener noreferrer"
+      </ButtonLink>
+      <ButtonLink
+        styles={`link-btn ${clr} ${btnHover}`}
+        linkTo={sourceCode.backend}
       >
         Backend Code
-      </a>
+      </ButtonLink>
     </Fragment>
   ) : (
-    <a
-      className={`link-btn ${shadow}`}
-      href={sourceCode.frontend}
-      target="_blank"
-      rel="noopener noreferrer"
+    <ButtonLink
+      styles={`link-btn ${clr} ${btnHover}`}
+      linkTo={sourceCode.frontend}
     >
       Source Code
-    </a>
+    </ButtonLink>
   );
-
   return (
     <Fragment>
-      <GoBack />
-      <div className="modal-bkg">
-        <div className={`modal-container ${clr} ${staticBkg}`}>
+      <div className="modal-bkg" onClick={() => closeModal()}>
+        <div
+          className={`modal-container ${clr} ${bkg}`}
+          onClick={e => e.stopPropagation()}
+        >
           <div className="modal-content">
-            <div className="gif-carousel">
-              <img
-                src={previewGifs.desktop}
-                className="gif"
-                alt="desktop demo preview"
-              />
-            </div>
+            <Carousel gifs={previewGifs} />
             <div className="modal-body">
+              <p className="modal-title">{title}</p>
               <p className="modal-desc">{description}</p>
-              {sourceCodeLinks}
-              {demo && (
-                <a
-                  className={`link-btn ${shadow}`}
-                  href={demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Demo
-                </a>
-              )}
+              <div className="modal-links">
+                {sourceCodeLinks}
+                {demo && (
+                  <ButtonLink
+                    styles={`link-btn ${clr} ${btnHover}`}
+                    linkTo={demo}
+                  >
+                    Demo
+                  </ButtonLink>
+                )}
+              </div>
             </div>
           </div>
         </div>

@@ -46,7 +46,7 @@
 
 .abt-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% auto;
 }
 
 .tool-item {
