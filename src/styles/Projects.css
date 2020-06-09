@@ -25,15 +25,22 @@
   text-align: center;
 }
 
-.prjc-img {
+.prjc-imgdiv {
   height: 8vw;
   margin-bottom: 1vw;
   border-radius: 5px;
 }
 
-.prjc-img:hover {
+.prjc-imgdiv:hover {
   cursor: pointer;
   margin-top: -10px;
+}
+
+.prjc-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .prjc-title {

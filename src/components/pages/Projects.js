@@ -2,23 +2,16 @@ import React, { Fragment, useContext } from "react";
 import ProjectMarkup from "../layout/ProjectMarkup";
 import GoBack from "../layout/GoBack";
 
+import prjcData from "../../projectsData.json";
+
 import "../../styles/Projects.css";
 import "../../styles/DarkMode.css";
 
 import DarkModeContext from "../../contexts/DarkModeContext";
 
-const dumbyProjectData = [
-  { image: "PROJECT IMAGE", title: "FIREBASE & REACT: twitter clone", id: 1 },
-  { image: "PROJECT IMAGE", title: "COMING SOON", id: 2 },
-  { image: "PROJECT IMAGE", title: "RESTful API + REACT: countries", id: 3 },
-  { image: "PROJECT IMAGE", title: "NODEjs + MongoDb: review app", id: 4 },
-  { image: "PROJECT IMAGE", title: "COMING SOON", id: 5 },
-  { image: "PROJECT IMAGE", title: "COMING SOON", id: 6 },
-];
-
-const prjcMarkup = dumbyProjectData.map(project => (
-  <ProjectMarkup project={project} />
-));
+const prjcMarkup = prjcData.projects.map(project => {
+  return <ProjectMarkup project={project} key={project.id} />;
+});
 
 const Projects = () => {
   const darkmode = useContext(DarkModeContext);

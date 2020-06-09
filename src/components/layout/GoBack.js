@@ -7,7 +7,7 @@ const GoBack = () => {
     <div className="gb-container">
       <div className="gb-box">
         <Link to="/" className="gb-link">
-          <i class="fas fa-arrow-left gb-arrow"></i>
+          <i className="fas fa-arrow-left gb-arrow"></i>
           Back
         </Link>
       </div>
