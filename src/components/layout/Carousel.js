@@ -9,7 +9,7 @@ const Carousel = ({ gifs }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrow: true,
-    className: "carousel-slider",
+    className: "slides",
   };
 
   return (

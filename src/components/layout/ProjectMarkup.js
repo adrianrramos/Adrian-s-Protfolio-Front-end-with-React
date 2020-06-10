@@ -3,7 +3,6 @@ import React, { useContext, useState } from "react";
 import "../../styles/Projects.css";
 
 import DarkModeContext from "../../contexts/DarkModeContext";
-import { Link } from "react-router-dom";
 import Portal from "./Portal";
 import ModalMarkup from "./ModalMarkup";
 
