@@ -9,7 +9,7 @@ const Clock = () => {
   const darkmodeToggle = darkmode.darkmode ? (
     <i className="toggle far fa-moon"></i>
   ) : (
-    <i class="fas fa-moon"></i>
+    <i className="fas fa-moon"></i>
   );
   const [time, setTime] = useState(dayjs().format("H:mm:ss"));
 

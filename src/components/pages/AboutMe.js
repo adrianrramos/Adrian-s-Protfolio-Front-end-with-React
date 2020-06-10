@@ -34,7 +34,7 @@ const AboutMe = () => {
           <p className="tools-header">Development</p>
           <div className="abt-grid">
             <p className="tool-item">
-              <i className="tool-icon fab fa-react"></i> React/Redux
+              <i className="tool-icon fab fa-react"></i> React.js
             </p>
             <p className="tool-item">
               <i className="tool-icon fab fa-js-square"></i> JavaScript

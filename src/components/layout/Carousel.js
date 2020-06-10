@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
 
+import "../../styles/ModalMarkup.css";
+
 const Carousel = ({ gifs }) => {
   const settings = {
     dots: true,
@@ -19,8 +21,9 @@ const Carousel = ({ gifs }) => {
           <div className="gif-slide">
             <img
               src={gifs.desktop}
-              className="gif"
+              className="gif dsk-gif"
               alt="desktop demo preview"
+              style={{ top: "50%" }}
             />
           </div>
           {gifs.mobile && (

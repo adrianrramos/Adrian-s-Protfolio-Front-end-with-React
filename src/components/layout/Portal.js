@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import ReactDOM from "react-dom";
 
 const portalRoot = document.getElementById("portal");
@@ -12,7 +12,7 @@ const Portal = ({ children }) => {
     return () => {
       portalRoot.removeChild(el);
     };
-  }, []);
+  });
 
   return ReactDOM.createPortal(children, el);
 };

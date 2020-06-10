@@ -21,7 +21,7 @@ const Home = () => {
       document.body.classList.remove("lt-bkg");
       document.body.classList.add(bkg);
     }
-  }, [bkg]);
+  }, [darkmode.darkmode, bkg]);
 
   return (
     <div className="page-container">
