@@ -71,5 +71,43 @@
     box-shadow: none;
   }
 
+  /* PROJECT MODALS */
+  .carousel-container {
+    display: none;
+  }
+
+  .modal-container {
+    width: 95%;
+    height: 130vw;
+    text-align: center;
+  }
+
+  .modal-content {
+    grid-template-columns: auto;
+  }
+
   /* ABOUT ME PAGE */
+  .abt-containers {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .abt-panel1 > p {
+    font-size: 2.3em;
+  }
+
+  .abt-panel2 {
+    padding: 20px 30px;
+  }
+
+  /* CONTACT PAGE */
+  .cnt-container {
+    width: 95%;
+  }
+
+  .cnt-line {
+    font-size: 1.4em;
+    letter-spacing: 0;
+  }
 }
