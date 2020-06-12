@@ -4,7 +4,7 @@
       "id": "1",
       "title": "REACT + FIREBASE: Mock Social Media",
       "image": "https://i.ibb.co/0XQyw9F/dsk-preview.png",
-      "description": "A web app connected to the CountriesAPI which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
+      "description": "This web app has the typical features you would see on most social media platforms today. Those include; creating posts, updating profile details and profile image, reading other user’s posts or profiles, deleting posts, liking posts, receiving notifications and user authentication.",
       "demo": "https://socialchimp-5c8f3.web.app/",
       "sourceCode": {
         "frontend": "https://github.com/ramos-codes/SocialPig_Frontend"
@@ -38,7 +38,7 @@
       "id": "3",
       "title": "REACT + FIREBASE: Mock Social Media",
       "image": "https://i.ibb.co/0XQyw9F/dsk-preview.png",
-      "description": "A web app connected to the CountriesAPI which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
+      "description": "This web app has the typical features you would see on most social media platforms today. Those include; creating posts, updating profile details and profile image, reading other user’s posts or profiles, deleting posts, liking posts, receiving notifications and user authentication.",
       "demo": "https://socialchimp-5c8f3.web.app/",
       "sourceCode": {
         "frontend": "https://github.com/ramos-codes/SocialPig_Frontend"
