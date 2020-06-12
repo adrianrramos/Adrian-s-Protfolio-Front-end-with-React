@@ -36,6 +36,9 @@ const Home = () => {
         <Link to="/aboutme" className={`gridItem  ${hover}`} id="smallBox1">
           <p className="gridItem-text">About Me</p>
         </Link>
+        <Link to="contact" className={`gridItem  ${hover}`} id="smallBox3">
+          <p className="gridItem-text">Contact</p>
+        </Link>
         <a
           href="https://github.com/ramos-codes"
           target="_blank"
@@ -45,9 +48,6 @@ const Home = () => {
         >
           <i className="fab fa-github gridItem-text"></i>
         </a>
-        <Link to="contact" className={`gridItem  ${hover}`} id="smallBox3">
-          <p className="gridItem-text">Contact</p>
-        </Link>
         <a
           href="https://www.linkedin.com/in/adrian-ramos-7aa653192/"
           target="_blank"

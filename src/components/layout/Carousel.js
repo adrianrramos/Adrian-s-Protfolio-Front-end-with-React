@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import CarouselSlide from "./CarouselSlide";
 
 import "../../styles/ModalMarkup.css";
 
@@ -14,27 +15,20 @@ const Carousel = ({ gifs }) => {
     className: "slides",
   };
 
+  const multiSlides = gifs.desktop.map(gif => {
+    return <CarouselSlide gif={gif} className="gif dsk-gif" />;
+  });
+
   return (
     <div className="carousel-container">
       <div>
         <Slider {...settings}>
-          <div className="gif-slide">
-            <img
-              src={gifs.desktop}
-              className="gif dsk-gif"
-              alt="desktop demo preview"
-              style={{ top: "50%" }}
-            />
-          </div>
-          {gifs.mobile && (
-            <div className="gif-slide">
-              <img
-                src={gifs.mobile}
-                className="gif"
-                alt="desktop demo preview"
-              />
-            </div>
+          {gifs.desktop.length > 1 ? (
+            multiSlides
+          ) : (
+            <CarouselSlide gif={gifs.desktop} className="gif dsk-gif" />
           )}
+          {gifs.mobile && <CarouselSlide gif={gifs.mobile} className="gif" />}
         </Slider>
       </div>
     </div>
