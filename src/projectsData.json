@@ -33,40 +33,6 @@
         ],
         "mobile": "https://media3.giphy.com/media/f3jB3uNjbXPSIa5iVN/giphy.gif"
       }
-    },
-    {
-      "id": "3",
-      "title": "REACT + FIREBASE: Mock Social Media",
-      "image": "https://i.ibb.co/0XQyw9F/dsk-preview.png",
-      "description": "This web app has the typical features you would see on most social media platforms today. Those include; creating posts, updating profile details and profile image, reading other user’s posts or profiles, deleting posts, liking posts, receiving notifications and user authentication.",
-      "demo": "https://socialchimp-5c8f3.web.app/",
-      "sourceCode": {
-        "frontend": "https://github.com/ramos-codes/SocialPig_Frontend"
-      },
-      "previewGifs": {
-        "desktop": [
-          "https://media.giphy.com/media/PnP9k7EhGsd9zIm8I1/giphy.gif",
-          "https://media.giphy.com/media/LPZfaSDkChVJHHvBkJ/giphy.gif",
-          "https://media.giphy.com/media/jR4nj92CsXKZ1iqRFl/giphy.gif"
-        ],
-        "mobile": "https://media.giphy.com/media/KDIos7BPh9KiVOzlA1/giphy.gif"
-      }
-    },
-    {
-      "id": "4",
-      "title": "REACT + REST API: Countries Info",
-      "image": "https://i.ibb.co/2gtZYc4/desktop-design-home-light.jpg",
-      "description": "A web app connected to the CountriesAPI which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
-      "demo": "https://rest-countries-api-react-app-b48anob8w.now.sh/",
-      "sourceCode": {
-        "frontend": "https://github.com/ramos-codes/REST_countries_API_ReactApp"
-      },
-      "previewGifs": {
-        "desktop": [
-          "https://media0.giphy.com/media/ehmujeze16pkfUq0qM/giphy.gif"
-        ],
-        "mobile": "https://media3.giphy.com/media/f3jB3uNjbXPSIa5iVN/giphy.gif"
-      }
     }
   ]
 }
