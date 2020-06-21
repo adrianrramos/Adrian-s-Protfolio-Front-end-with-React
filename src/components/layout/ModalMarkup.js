@@ -49,8 +49,10 @@ const ModalMarkup = ({
           <div className="modal-content">
             <Carousel gifs={previewGifs} />
             <div className="modal-body">
-              <p className="modal-title">{title}</p>
-              <p className="modal-desc">{description}</p>
+              <div className="modal-txt">
+                <p className="modal-title">{title}</p>
+                <p className="modal-desc">{description}</p>
+              </div>
               <div className="modal-links">
                 {sourceCodeLinks}
                 {demo && (

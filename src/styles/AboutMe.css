@@ -1,13 +1,14 @@
 .abt-containers {
-  width: 48vw;
-  margin: 0 auto;
+  width: 65%;
+  margin: 0 auto 30px auto;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 3vw;
+  /* TODO: FIX CONTAINERS TOTAL */
+  grid-template-columns: 49% 49%;
+  column-gap: 2%;
 }
 
 .abt-panel1 {
-  height: 30vw;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,4 +64,30 @@
 .svg {
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .abt-containers {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .abt-containers {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .abt-panel1 > p {
+    font-size: 2.3em;
+  }
+
+  .abt-panel2 {
+    padding: 20px 10px;
+  }
+
+  .tools-header {
+    margin-bottom: 20px;
+  }
 }
