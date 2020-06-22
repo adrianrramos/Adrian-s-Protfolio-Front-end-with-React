@@ -24,7 +24,7 @@ const Contact = () => {
       <p className="cnt-line">
         <i class="far fa-file-pdf"></i>{" "}
         <a
-          href="https://goo.gl/maps/LGaVpHA5KXjsZ9fT6"
+          href="resume.com" // FIXME: NEED TO ADD A RESUME
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,14 +56,7 @@ const Contact = () => {
         </a>
       </p>
       <p className="cnt-line">
-        <i class="fas fa-compass"></i>{" "}
-        <a
-          href="https://goo.gl/maps/LGaVpHA5KXjsZ9fT6"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          San Francisco, CA
-        </a>
+        <i class="fas fa-compass"></i> San Francisco, CA
       </p>
     </div>
   );
