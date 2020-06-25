@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "1",
-      "title": "REACT + FIREBASE: Social Media - Oinker",
+      "title": "Social Media App - Oinker",
       "image": "https://i.ibb.co/0XQyw9F/dsk-preview.png",
       "description": "Built with React / Redux in the frontend and Firebase in the backend. This web app has the following features; creating posts, updating profile details and profile image, reading other user’s posts or profiles, deleting posts, liking posts, receiving notifications and user authentication.",
       "demo": "https://socialchimp-5c8f3.web.app/",
@@ -20,9 +20,9 @@
     },
     {
       "id": "2",
-      "title": "REACT + REST API: Countries Info",
+      "title": "REST Countries API",
       "image": "https://i.ibb.co/2gtZYc4/desktop-design-home-light.jpg",
-      "description": "Built with React this web app is connected to the CountriesAPI which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
+      "description": "Built with React this web app is connected to the REST Countries API which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
       "demo": "https://rest-countries-api-react-app-b48anob8w.now.sh/",
       "sourceCode": {
         "frontend": "https://github.com/ramos-codes/REST_countries_API_ReactApp"
@@ -36,7 +36,7 @@
     },
     {
       "id": "3",
-      "title": "HTML + CSS: Company Landing Page",
+      "title": "Bookmark Company Landing Page",
       "image": "https://media.discordapp.net/attachments/358020353207042049/724093681736613888/unknown.png?width=1258&height=677",
       "description": "Built with CSS and HTML, the goal of this project was to challenge my CSS skills. I was given a design reference which I then took and converted to a live website demo, to mimic the workflow of real-world project. The landing page can be viewed on multiple screens and matches to the original design. This site is an example of the type of work I can do for your projects.",
       "demo": "https://bookmark-landing-page-liard.vercel.app/",
@@ -52,7 +52,7 @@
     },
     {
       "id": "4",
-      "title": "REACT JS: Job Listings Component",
+      "title": "Job Listings Component",
       "image": "https://media.discordapp.net/attachments/358020353207042049/724126853329059921/active-states.jpg?width=975&height=677",
       "description": "Built with React this web component filters a list of job posts based on selected tags from those job posts. This is some earlier work of mine, created when I was originally getting started with React.js and general Frontend developer work. Check out the other projects of mine to witness the progress.",
       "demo": "https://job-listings-component.now.sh/",

@@ -72,7 +72,7 @@
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
   /* INCLUDES THE CONTACT MEDIA QUERY */
   .contact-and-prjc {
     display: flex;

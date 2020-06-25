@@ -164,7 +164,7 @@ const AboutMe = () => {
             <i className="tool-icon fab fa-python"></i> Python
           </p>
         </div>
-        <p className="tools-header">Workflow</p>
+        {/* <p className="tools-header">Workflow</p>
         <div className="abt-grid">
           <p className="tool-item">
             <i className="tool-icon fab fa-github"></i> GitHub
@@ -210,7 +210,7 @@ const AboutMe = () => {
           <p className="tool-item">
             <i className="tool-icon fab fa-npm"></i> NPM
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
