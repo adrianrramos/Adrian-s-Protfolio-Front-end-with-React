@@ -23,7 +23,7 @@ const Projects = () => {
       <Contact />
       <div className="prjc-container">
         <div className={`prjc-header ${clr} ${border}`}>
-          <p>PROJECTS</p>
+          <p id="prjc-title-text">PROJECTS</p>
         </div>
         <div className="prjc-display">{prjcMarkup}</div>
       </div>

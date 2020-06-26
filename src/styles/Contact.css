@@ -1,14 +1,16 @@
 .cnt-title {
+  margin-block-start: 40px;
+  margin-block-end: 40px;
   text-align: center;
   font-size: 3em;
   font-weight: 800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
 }
 
 .cnt-line {
   text-align: center;
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 600;
   letter-spacing: 0.04em;
 }
 

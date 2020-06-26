@@ -12,7 +12,7 @@ const Contact = () => {
 
   return (
     <div className={`cnt-container ${clr}  `}>
-      <p className="cnt-title">Contact Info</p>
+      <p className="cnt-title">CONTACT INFO</p>
       <p className="cnt-line">
         <i class="fas fa-envelope-square"></i>{" "}
         <a href="mailto:ramosadrian56@gmail.com">ramosadrian56@gmail.com</a>
@@ -24,7 +24,7 @@ const Contact = () => {
       <p className="cnt-line">
         <i class="far fa-file-pdf"></i>{" "}
         <a
-          href="resume.com" // FIXME: NEED TO ADD A RESUME
+          href="https://docs.google.com/document/d/1HG5x06wxnT3p-75x-dnan3lAjl4IAH-dRbuMjY1Olv4/edit?usp=sharing" // FIXME: NEED TO ADD A RESUME
           target="_blank"
           rel="noopener noreferrer"
         >
