@@ -24,7 +24,7 @@ const Contact = () => {
       <p className="cnt-line">
         <i class="far fa-file-pdf"></i>{" "}
         <a
-          href="https://docs.google.com/document/d/1HG5x06wxnT3p-75x-dnan3lAjl4IAH-dRbuMjY1Olv4/edit?usp=sharing" // FIXME: NEED TO ADD A RESUME
+          href="https://drive.google.com/file/d/1mXc05OynS_Ps_o1ZVPhe7o4VhkwN0Lu4/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
