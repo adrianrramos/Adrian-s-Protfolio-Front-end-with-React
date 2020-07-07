@@ -36,6 +36,7 @@
   height: 8vw;
   margin-bottom: 1vw;
   border-radius: 5px;
+  transition: all 350ms;
 }
 
 .prjc-imgdiv:hover {

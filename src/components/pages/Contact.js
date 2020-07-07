@@ -15,7 +15,7 @@ const Contact = () => {
       <p className="cnt-title">CONTACT INFO</p>
       <p className="cnt-line">
         <i class="fas fa-envelope-square"></i>{" "}
-        <a href="mailto:ramosadrian56@gmail.com">ramosadrian56@gmail.com</a>
+        <a href="mailto:contact@adrianramos.dev">contact@adrianramos.dev</a>
       </p>
       <p className="cnt-line">
         <i class="fas fa-mobile"></i>{" "}
@@ -24,7 +24,7 @@ const Contact = () => {
       <p className="cnt-line">
         <i class="far fa-file-pdf"></i>{" "}
         <a
-          href="https://drive.google.com/file/d/1mXc05OynS_Ps_o1ZVPhe7o4VhkwN0Lu4/view?usp=sharing"
+          href="https://drive.google.com/file/d/12uLPTMJktqKBGdmokANH4Xf_Z4vzf4gJ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
