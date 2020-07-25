@@ -16,7 +16,7 @@ const Carousel = ({ gifs }) => {
   };
 
   const multiSlides = gifs.desktop.map(gif => {
-    return <CarouselSlide gif={gif} className="gif dsk-gif" />;
+    return <CarouselSlide gif={require(`${gif}`)} className="gif dsk-gif" />;
   });
 
   return (
@@ -26,9 +26,9 @@ const Carousel = ({ gifs }) => {
           {gifs.desktop.length > 1 ? (
             multiSlides
           ) : (
-            <CarouselSlide gif={gifs.desktop} className="gif dsk-gif" />
+            <CarouselSlide gif={require(`${gifs.desktop}`)} className="gif dsk-gif" />
           )}
-          {gifs.mobile && <CarouselSlide gif={gifs.mobile} className="gif" />}
+          {gifs.mobile && <CarouselSlide gif={require(`${gifs.mobile}`)} className="gif" />}
         </Slider>
       </div>
     </div>

@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "id": "1",
+      "id": "2",
       "title": "Oinker",
       "image": "https://i.ibb.co/0XQyw9F/dsk-preview.png",
       "description": "Built with React / Redux in the frontend and Firebase in the backend. This web app has the following features; creating posts, updating profile details and profile image, reading other user’s posts or profiles, deleting posts, liking posts, receiving notifications and user authentication.",
@@ -10,16 +10,12 @@
         "frontend": "https://github.com/ramos-codes/SocialPig_Frontend"
       },
       "previewGifs": {
-        "desktop": [
-          "https://media.discordapp.net/attachments/358020353207042049/724081255368359956/desktop-video1.gif?width=1389&height=677",
-          "https://media.discordapp.net/attachments/358020353207042049/724081262800928849/desktop-video3.gif?width=1375&height=677",
-          "https://media.discordapp.net/attachments/358020353207042049/724081268240941056/desktop-video2.gif?width=1375&height=677"
-        ],
-        "mobile": "https://media.discordapp.net/attachments/358020353207042049/724081260573491340/mobile-video.gif?width=308&height=676"
+        "desktop": ["./assets/oinker1.gif", "./assets/oinker2.gif", "./assets/oinker3.gif"],
+        "mobile": "./assets/oinker_mobile1.gif"
       }
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "Country Wiki",
       "image": "https://i.ibb.co/2gtZYc4/desktop-design-home-light.jpg",
       "description": "Built with React this web app is connected to the REST Countries API which supplies the application with data about countries from around the world. The app can filter by region or search term, has mobile and desktop layouts, and both a light and dark theme",
@@ -28,14 +24,12 @@
         "frontend": "https://github.com/ramos-codes/REST_countries_API_ReactApp"
       },
       "previewGifs": {
-        "desktop": [
-          "https://media.discordapp.net/attachments/358020353207042049/724080781802078249/countries-dsk.gif?width=1080&height=677"
-        ],
-        "mobile": "https://media.discordapp.net/attachments/358020353207042049/724080770578382878/countries-mobile.gif?width=287&height=676"
+        "desktop": ["./assets/country1.gif"],
+        "mobile": "./assets/country_mobile1.gif"
       }
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Bookmark Landing Page",
       "image": "https://media.discordapp.net/attachments/358020353207042049/724093681736613888/unknown.png?width=1258&height=677",
       "description": "Built with CSS and HTML, the goal of this project was to challenge my CSS skills. I was given a design reference which I then took and converted to a live website demo, to mimic the workflow of real-world project. The landing page can be viewed on multiple screens and matches to the original design.",
@@ -44,14 +38,12 @@
         "frontend": "https://github.com/ramos-codes/3-Front-End-challenges/tree/master/Bookmark"
       },
       "previewGifs": {
-        "desktop": [
-          "https://media.discordapp.net/attachments/358020353207042049/724090010067795968/desktop-video1.gif?width=1442&height=640"
-        ],
-        "mobile": "https://media.discordapp.net/attachments/358020353207042049/724090010839678996/mobile-video1.gif?width=315&height=677"
+        "desktop": ["./assets/bookmark1.gif"],
+        "mobile": "./assets/bookmark_mobile1.gif"
       }
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Job Board Filter",
       "image": "https://media.discordapp.net/attachments/358020353207042049/724126853329059921/active-states.jpg?width=975&height=677",
       "description": "Built with React this web component filters a list of job posts based on selected tags from those job posts. This is some earlier work of mine, created when I was originally getting started with React.js and general Frontend developer work. Check out the other projects of mine to witness the progress.",
@@ -60,10 +52,8 @@
         "frontend": "https://github.com/ramos-codes/job_listings_component"
       },
       "previewGifs": {
-        "desktop": [
-          "https://media.discordapp.net/attachments/358020353207042049/724126806856302702/desktop-video1.gif?width=1442&height=640"
-        ],
-        "mobile": "https://media.discordapp.net/attachments/358020353207042049/724126805258141747/mobile-video1.gif?width=307&height=677"
+        "desktop": ["./assets/jobs1.gif"],
+        "mobile": "./assets/jobs_mobile1.gif"
       }
     }
   ]
